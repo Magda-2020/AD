@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>AD</title>
+</head>
+
+<body>
+
+    <!--Navigation-->
+    <div class="topnav" id="myTopnav">
+        <a href="#Accueil" class="active">Accueil</a>
+        <a href="#Services">Services</a>
+        <a href="#Tarifs">Tarifs</a>
+        <a href="#Contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!--HEADER-->
+    <header>
+        <div class="headercontainer">
+            <div>
+                <img class="himg" src="img/header.jpg" alt="pc">
+                <div class="centered">Innovez avec AD! </div>
+            </div>
+        </div>
+    </header>
+    <!--SERVICES-->
+    <section>
+        <h2>SERVICES</h2>
+        <p>Nos services sont très diversifiés</p>
+        <div class="servicescontainer">
+
+            <div class="card">
+                <img class="services" src="img/code.jpg" alt="code">
+                <h3>Code</h3>
+                <p>Lorem, ipsum dolor.</p>
+                <a href="services.html">En savoir plus</a>
+            </div>
+            <div class="card">
+                <img class="services" src="img/online.jpg" alt="online">
+                <h3>Online Marketing</h3>
+                <p>Lorem, ipsum dolor.</p>
+                <a href="services.html">En savoir plus</a>
+            </div>
+            <div class="card">
+                <img class="services" src="img/responsive.jpg" alt="responsive">
+                <h3>Responsive</h3>
+                <p>Lorem, ipsum dolor.</p>
+                <a href="services.html">En savoir plus</a>
+            </div>
+            <div class="card">
+                <img class="services" src="img/seo.jpg" alt="seo">
+                <h3>SEO</h3>
+                <p>Lorem, ipsum dolor.</p>
+                <a href="services.html">En savoir plus</a>
+            </div>
+            <div class="card">
+                <img class="services" src="img/social.jpg" alt="social">
+                <h3>Réseaux Sociaux</h3>
+                <p>Lorem, ipsum dolor.</p>
+                <a href="services.html">En savoir plus</a>
+            </div>
+            <div class="card">
+                <img class="services" src="img/web.jpg" alt="web">
+                <h3>Web Design</h3>
+                <p>Lorem, ipsum dolor.</p>
+                <a href="services.html">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+    <!--TARIFS-->
+    <section>
+        <h2>TARIFS</h2>
+        <P>Nous avons 3 offres tarifaires :Basic, Standard, Premium.</P>
+
+        <div class="slideshow-container">
+
+            <div class="Slides fade">
+                <img class="slide-img" src="img/basic.jpg" alt="basic">
+                <div class="text">Offre Basic</div>
+            </div>
+
+            <div class="Slides fade">
+                <img class="slide-img" src="img/standard.jpg" alt="standard">
+                <div class="text">Offre Standard</div>
+            </div>
+
+            <div class="Slides fade">
+                <img class="slide-img" src="img/premium.jpg" alt="premium">
+                <div class="text">Offre Premium</div>
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div>
+            <a href="tarifs.html">En savoir plus</a>
+        </div>
+
+    </section>
+    <!--CONTACT-->
+    <section>
+        <h2>Contact</h2>
+        <p>Pour plus d'informations, vous pouvez remplir le formulaire de contact ci-dessous</p>
+        <div class="container">
+            <form name="myForm" onsubmit="return validateForm()" method="post">
+
+                <label class="color" id="fname">Votre Prénom</label>
+                <input type="text" name="firstname" placeholder="Votre prénom">
+
+                <label class="color" id="lname">Votre Nom</label>
+                <input type="text" name="lastname" placeholder="Votre nom">
+
+                <label class="color" id="email">Votre Email</label>
+                <input type="text" name="email" placeholder="Votre Email">
+
+                <label class="color" id="subject">Object</label>
+                <textarea class="space" name="subject" placeholder="Écrivez quelque chose"></textarea>
+
+                <input type="submit" value="Envoyer">
+
+            </form>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <p>&copy;2021 AD Tous droits réservés</p>
+        <a href="politiquedeconfidentialite.html">Politique de confidentialité</a>
+        <a href="mentionslegales.html">Mentions Légales</a>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
